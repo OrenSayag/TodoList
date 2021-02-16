@@ -62,6 +62,77 @@ const colorArr = [
 	},
 	// 'blue', 'green', 'yellow', 'lime', 'violet', 'bisque'
 ];
+let themes = [
+	{
+		name: "Underwater",
+		myColorArr: [
+			"#c7F6EC",
+			"#012172",
+			"#9199BE",
+			"#107050",
+			"#1F1641",
+			"#16235A"
+		],
+		mainTextColor: "#c7F6EC",
+		headerAndTableColor: "#012172",
+		formColor: "#9199BE",
+		btnColor: "#107050",
+		bodyBgc: "#1F1641",
+		beneathNoteColor: "#16235A"
+	},
+	{
+		name: "Blood Mountain",
+		myColorArr: [
+			"#FFC300",
+			"#212027",
+			"#F22F08",
+			"#8D2F23",
+			"#561E18",
+			"#8C7462"
+		],
+		mainTextColor: "#FFC300",
+		headerAndTableColor: "#212027",
+		formColor: "#F22F08",
+		btnColor: "#8D2F23",
+		bodyBgc: "#561E18",
+		beneathNoteColor: "#8C7462"
+	},
+	{
+		name: "Candy",
+		myColorArr: [
+			"#AFBADC",
+			"#777CA8",
+			"#EE6C81",
+			"#BB1924",
+			"#F092A5",
+			"#16235A"
+		],
+		mainTextColor: "#AFBADC",
+		headerAndTableColor: "#777CA8",
+		formColor: "#EE6C81",
+		btnColor: "#BB1924",
+		bodyBgc: "#F092A5",
+		beneathNoteColor: "#16235A"
+	},
+	{
+		name: "Nespresso",
+		myColorArr: [
+			"#F2EBE9",
+			"#3F2A1D",
+			"#8E6248",
+			"#8C7462",
+			"#24150E",
+			"#16235A"
+		],
+		mainTextColor: "#F2EBE9",
+		headerAndTableColor: "#3F2A1D",
+		formColor: "#8E6248",
+		btnColor: "#8C7462",
+		bodyBgc: "#24150E",
+		beneathNoteColor: "#16235A"
+	}
+]
+
 let divTasksArr = [];
 let binTasksArr = [];
 let categoryArr = [
@@ -1182,77 +1253,7 @@ function themesOpen(){
 	//grid to the bot
 
 	// themes obj arr
-	let themes = [
-		{
-			name: "Underwater",
-			myColorArr: [
-				"#c7F6EC",
-				"#012172",
-				"#9199BE",
-				"#107050",
-				"#1F1641",
-				"#16235A"
-			],
-			mainTextColor: "#c7F6EC",
-			headerAndTableColor: "#012172",
-			formColor: "#9199BE",
-			btnColor: "#107050",
-			bodyBgc: "#1F1641",
-			beneathNoteColor: "#16235A"
-		},
-		{
-			name: "Blood Mountain",
-			myColorArr: [
-				"#FFC300",
-				"#212027",
-				"#F22F08",
-				"#8D2F23",
-				"#561E18",
-				"#8C7462"
-			],
-			mainTextColor: "#FFC300",
-			headerAndTableColor: "#212027",
-			formColor: "#F22F08",
-			btnColor: "#8D2F23",
-			bodyBgc: "#561E18",
-			beneathNoteColor: "#8C7462"
-		},
-		{
-			name: "Candy",
-			myColorArr: [
-				"#AFBADC",
-				"#777CA8",
-				"#EE6C81",
-				"#BB1924",
-				"#F092A5",
-				"#16235A"
-			],
-			mainTextColor: "#AFBADC",
-			headerAndTableColor: "#777CA8",
-			formColor: "#EE6C81",
-			btnColor: "#BB1924",
-			bodyBgc: "#F092A5",
-			beneathNoteColor: "#16235A"
-		},
-		{
-			name: "Nespresso",
-			myColorArr: [
-				"#F2EBE9",
-				"#3F2A1D",
-				"#8E6248",
-				"#8C7462",
-				"#24150E",
-				"#16235A"
-			],
-			mainTextColor: "#F2EBE9",
-			headerAndTableColor: "#3F2A1D",
-			formColor: "#8E6248",
-			btnColor: "#8C7462",
-			bodyBgc: "#24150E",
-			beneathNoteColor: "#16235A"
-		}
-	]
-
+	
 	//append themes divs to grid
 	// a theme div have theme class, have 6 divs inside which get the bgc from
 	// the obj
