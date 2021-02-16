@@ -1,0 +1,6 @@
+1. bin won't update after noraml category change and deleting tasks after
+2. bin cats don't update live ON DELETE
+3. bin cat change fucks the bin (no tasks will be displayed until refresh) - problem in binTempClear which removes children that aren't in div
+4. new category doesn't update live 
+
+tasktrash from onRefsresh doesnt show on bin when deleted

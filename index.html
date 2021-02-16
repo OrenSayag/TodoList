@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Pangolin&display=swap" rel="stylesheet">
+	<title>Project 1</title>
+</head>
+<body>
+	
+	<div id="body-top">
+		<div id="title">
+			To-Do List
+		</div>
+	</div>
+
+	<div id="themes-cont">
+		<div id="themes-top">
+			<i id="themes-btn" class="fas fa-palette"></i>
+			<!-- <div id="themes-btn">B</div> -->
+			<i id="themes-close" class="fas fa-times"></i>
+		</div>
+		<div id="themes-bot"></div>
+		
+	</div>
+
+	<div id="body-mid">
+		<div id="table">
+			<div id="form">
+				<div id="tools" class="table-tools">
+					<div id="category-header-cont">
+						<h4 id="category-header">Category:</h4>
+						<button id="category-settings-btn"><i class="fas fa-cog"></i></button>
+					</div>
+					<select id="categories-select">
+						<!-- <option value="" selected="true">Main</option> -->
+					</select>
+					<button id="bin-btn">
+						Bin
+					</button>
+					<div id="font-size-cont">
+						<button id="bigger-font-btn" class="theme-btn">A+</button><button id="smaller-font-btn" class="theme-btn">A-</button>
+					</div>
+				</div>
+				<div id="form-l">
+					<textarea rows="5" cols="50" type="textarea" id="text-input"></textarea>
+					<div id="form-l-date-cont">
+						<input type="date" id="date-input">
+						<div id="time-cont">
+							<!-- <input type="checkbox" id="time-cb"> -->
+							<input type="time" id="time-input">
+						</div>
+						<div id="color-input-cont">
+							<select type="color" id="color-input">
+								<option value="#822B2B">Royal Red</option>
+								<option value="#282726">Military Green</option>
+								<option value="#6A8A82">Mist</option>
+								<option value="#A37C27">Desert</option>
+								<option value="#563838">Earth</option>
+								<option value="#6465A5">Galaxy</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div id="form-r" class="table-tools">
+					<button id="save-task-btn" class="theme-btn">
+						Save Task
+					</button><button id="clear-form-btn" class="theme-btn">
+						Clear Task
+					</button>
+				</div>
+				<div id="add-category-form">
+					<div id="add-category-form-cancel">X</div>
+					<div id="add-category-header">Add a New Category</div>
+					<div id="add-category-name-cont" class="add-category-input-cont">
+						Name:
+						<input type="text" id="add-category-name-input">
+					</div>
+					<div id="add-category-color-cont" class="add-category-input-cont">
+						Default Note Color:
+						<select type="color" id="add-category-color-select">
+							<!-- <option value="" disabled="disabled" selected="selected">First test option (color)</option> -->
+						</select>
+					</div>
+					<button id="submit-category-form-btn">Add Category</button>
+				</div>
+
+				<div id="category-settings-main">
+					<div id="category-main-header-cont">
+						<div id="exit-categories-main-cont">
+							<button id="exit-categories-main-btn"><i class="fas fa-times"></i></button>
+						</div>
+						<div id="category-settings-header">Categories</div>
+						<button id="category-header-add-btn"><i class="fas fa-plus"></i>New Category</button>
+					</div>
+					<div id="category-row-cont">
+						<div class="category-row">
+							<div class="category-row-namecolor-cont">
+								<div class="category-row-name">Name</div>
+								<div class="category-row-note-color">Default Note Color</div>
+							</div>
+							<div class="category-row-btn-cont">
+								<!-- <div class="category-row-edit-btn"><i class="fas fa-pencil-alt"></i></div>
+								<div class="category-row-delete-btn"><i class="fas fa-trash-alt"></i></div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="body-bot">
+	</div>
+
+	<div id="bin">
+		<div id="bin-header">
+			<button id="close-bin-btn"><i class="fas fa-times"></i></button>
+			<button id="clear-bin-btn">Clear Bin</button>
+			<div id="bin-title">Bin</div>
+			<select id="bin-select">
+				<option value="all">All</option>
+			</select>
+		</div>
+		<div id="bin-bot"></div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
