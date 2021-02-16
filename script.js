@@ -90,11 +90,10 @@ document.body.style.width = window.innerWidth;
 if(!localStorage.categoryArr || !localStorage.bin){
 	firstTimeLocal();
 	firstTimeInputs();
-} else {
-	themeOnRefresh();
 }
 categorySelectUpdateOnRefresh();
 tasksDisplayOnRefresh();
+themeOnRefresh();
 colorSelectBuilder(addCategoryColorSelect);
 shadowListeners();
 categoryRowBuilderOnRefresh();
@@ -582,6 +581,7 @@ function alertInvalidText(){
 function firstTimeLocal(){
 	localStorage.categoryArr = JSON.stringify(categoryArr);
 	localStorage.bin = JSON.stringify(bin);
+	localStorage.theme = JSON.stringify(themes[0]);
 }
 function updateFromLocal(){
 	// localStorage.currTasksArr = JSON.stringify(currTasksArr);
